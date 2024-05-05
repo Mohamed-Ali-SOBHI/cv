@@ -1,138 +1,258 @@
-<head>
-    <title>CV de Mohamed Ali SOBHI</title>
-    <meta charset="utf-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="cv.css">
-</head>
-<body>
-    
-    <section>
-        <div class="photo">
-            <img src="ressource/photo de profil.png"Ma photo de profil">
-        </div>
-        <div class="prez">
-            <h2>Qui suis-je ?</h2>
-            <p>Je suis un étudiant français en Intelligence Artificielle basé à Paris, passionné par la Data Science, le Machine Learning,
-                Cybersécurité et robotique</p>
-            <a href="ressource/CV-Mohamed-Ali-SOBHI (1) (1).pdf" download>Télécharger mon CV</a>
-        </div>
-        <div class="contact">
-            <h2>Informations de contact</h2>
-            <div class="contact-flex">
-                <p>Nom : </p>
-                <p>SOBHI Mohamed Ali</p>
-            </div>
-            <div class="contact-flex">
-                <p>Adresse : </p>
-                <p>41 Rue GUYNEMER 93200 Saint Denis</p>
-            </div>
-            <div class="contact-flex">
-                <p>Téléphone :</p>
-                <p>07 81 99 61 98</p>
-            </div>
-            <div class="contact-flex">
-                <p>Mail : </p>
-                <p><a href="mailto:mohammedalisobhi@gmail.com">mohammedalisobhi@gmail.com</a></p>
-            </div>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/mohamed-ali-sobhi-a7517b200/"><img src="ressource/lk-logo.png" alt="Logo Lk"></a>
-                <a href="https://github.com/Mohamed-Ali-SOBHI?tab=repositories"><img src="ressource/github.png" alt="Logo GH"></a>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Réalisation personnel</h2>
-        <div class="realisation">
-            <div class="realisation-flex">
-                <h3>Sea detection</h3>
-                <a href="/sea_project.html"><img src="ressource/sea.png" alt="sea"></a>
-                <p>IA qui detecte les images de mer en python</p>
-            </div>
-            <div class="realisation-flex">
-                <h3>Match predicteur</h3>
-                <a href="/match_project.html"><img src="ressource/football.jpeg" alt="football"></a>
-                <p>IA qui predit les score des match de football en python</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Expériences professionnelles</h2>
-        <div class="exp">
-            <div class="exp-logo">
-                <img src="ressource/maire de marseille.png" alt="Logo de Mairie de Marseille">
-            </div>
-            <div class="exp-info">
-                <h3>Dévloppeur web full stack</h3>
-                <h4>Mairie de Marseille</h4>
-                <h4>Avril 2022 - Juilliet 2022</h4>
-            </div>
-            <div class="exp-desc">
-                <li>Développement application web,</li>
-                <li>Framework Laravel PHP,</li>
-                <li>Librairie JavaScript : ChartJS,</li>
-                <li>Illustration dynamique de data intégrant des filtres,</li>
-                <li>Animation des réunions de test & production,</li>
-                <li>Elaboration de rapport d’étude de faisabilité.</li>
-            </div>
-        </div>
-        <div class="exp">
-            <div class="exp-logo">
-                <img src="ressource/softway medical.png" alt="Logo de softway medical">
-            </div>
-            <div class="exp-info">
-                <h3>Assistant développeur full stack</h3>
-                <h4>softway medical</h4>
-                <h4>Novembre 2021</h4>
-            </div>
-            <div class="exp-desc">
-                <li>Elaboration de MCD UML,</li>
-                <li>Testing d’application.</li>
-            </div>
-        </div>
-    </section>
+<!DOCTYPE html>
+<html>
 
-    
-    <section>
-        <h2>Formation</h2>
-        <div class="exp">
-            <div class="exp-logo">
-                <a href="#"><img src="ressource/P8.png" alt="Logo P8"></a>
-            </div>
-            <div class="exp-info">
-                <h3>Master infomatique</h3>
-                <h4>2022 - </h4>
-            </div>
-        </div>
-        <div class="exp">
-            <div class="exp-logo">
-                <img src="ressource/AMU.jpg" alt="AMU">
-            </div>
-            <div class="exp-info">
-                <h3>Licence infomatique</h3>
-                <h4>2018 - 2022</h4>
-            </div>
-        </div>
-    </section>
-    
-    <section>
-        <h2>Centres d'intérêt</h2>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/trail.png" alt="Trail">
-            <figcaption>Trail</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/cuisine.jpg" alt="Cuisine">
-            <figcaption>Cuisine</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/gaming.jpg" alt="Gaming">
-            <figcaption>Jeux vidéos</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/07/livre.jpg" alt="Littérature">
-            <figcaption>Littérature</figcaption>
-        </figure>
-    </section>
-    
-    
+<head>
+	<title>My Resume</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wraper">
+		<div class="container">
+			<div class="left-content p-30">
+				<div class="logo">
+					<a href="index.html">
+						<span>My</span>
+						<span>Resume</span>
+					</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#Home">Infos</a></li>
+						<li><a href="#Work">Work Experiences</a></li>
+						<li><a href="#Portfolio">Portfolio</a></li>
+						<li><a href="#Education">Education</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="left-footer">
+					<div class="social-icons">
+						<ul>
+							<li>
+								<a href="https://www.linkedin.com/in/mohamed-ali-sobhi-a7517b200/" target="_blank">
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/Mohamed-Ali-SOBHI" target="_blank">
+									<i class="fa fa-github" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot-contact">
+						<ul>
+							<li>mohammedalisobhi@gmail.com</li>
+							<li>+33 7 81 99 61 98</li>
+						</ul>
+					</div>
+
+					<div class="copy-rights">Copyright &copy;2024 All rights reserved</div>
+				</div>
+
+			</div>
+			<div class="main-content">
+				<div class="section1 p-30" id="Home">
+					<div class="sec-title">
+						<div class="pg-sub-title">Infos</div>
+						<div class="pg-title">My Profile</div>
+					</div>
+					<div class="d-flex-align-center">
+						<div class="user-img flex-1"><img
+								src="https://colorlib.com/preview/theme/meetme/img/personal.jpg"></div>
+						<div class="user-profile flex-1">
+							<div class="pro-details">
+								<div class="sm-text">HELLO EVERYBODY, I AM</div>
+								<div class="name">Mohamed Ali SOBHI</div>
+								<div class="role">Data Scientist</div>
+
+							</div>
+							<div class="pr-list">
+								<ul>
+									<li><i class="fa fa-calendar" aria-hidden="true"></i> 20th July, 2000</li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i> +33 7 81 99 61 98</li>
+									<li><i class="fa fa-envelope" aria-hidden="true"></i> mohammedalisobhi@gmail.com
+									</li>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i> Cachan 94200, France</li>
+								</ul>
+							</div>
+							<div class="social-icons-head">
+								<ul>
+									<li>
+										<a href="https://www.linkedin.com/in/mohamed-ali-sobhi-a7517b200/"
+											target="_blank">
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/Mohamed-Ali-SOBHI" target="_blank">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section2 p-30" id="Work">
+					<div class="sec-title">
+						<div class="pg-sub-title">Work Experiences</div>
+						<div class="pg-title"> My Work Experiences</div>
+					</div>
+					<div class="work-list">
+						<div class="work-item">
+							<div class="work-year">2022 - 2024</div>
+							<div class="work-details">
+								<div class="work-title">Data Scientist</div>
+								<div class="work-contract">Apprenticeship</div>
+								<div class="work-company">Carrefour France</div>
+								<div class="work-text">
+									I worked as a Data Scientist at Carrefour France, focusing on the development of a
+									machine learning model to predict product sales. This project involved creating a
+									sophisticated tool that leveraged historical sales data to forecast future trends,
+									thereby aiding in inventory and marketing strategy optimization.
+
+									In addition to predictive modeling, I also developed an interactive dashboard for
+									company employees. This dashboard was designed to provide real-time insights into
+									product sales performance, enabling users to make informed decisions based on
+									current data trends. The tool featured intuitive data visualizations to aid in the
+									analysis and presentation of sales metrics across different regions and periods.
+
+									These efforts were part of Carrefour's initiative to harness data science and
+									machine learning technologies to enhance operational efficiencies and customer
+									satisfaction. My role encompassed not only the technical aspects of these projects
+									but also collaboration with various teams to ensure that the implementations met the
+									strategic business needs effectively.
+								</div>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-year">2023</div>
+							<div class="work-details">
+								<div class="work-title">Full Stack Developer</div>
+								<div class="work-contract">Freelance</div>
+								<div class="work-company">Mairie de Levallois Perret</div>
+								<div class="work-text">I worked as a Full Stack Developer at the Levallois Perret city
+									hall, contributing to the city's digital transformation project. My role involved
+									developing a web application specifically designed for schools within the city to
+									monitor student attendance. Making daily operations more efficient for educators and
+									administrative staff.
+								</div>
+							</div>
+							<div class="work-item">
+								<div class="work-year">2022</div>
+								<div class="work-details">
+									<div class="work-title">Full Stack Developer</div>
+									<div class="work-contract">Internship</div>
+									<div class="work-company">Mairie de Marseille</div>
+									<div class="work-text">I worked as a Full Stack Developer at the Marseille city
+										hall. My main responsibility was to develop a web application that provides
+										citizens with access to current and historical election results. This
+										application features results displayed in various graphical formats, which aids
+										in making the data more accessible and understandable to the general public.
+
+										Additionally, the application includes multiple filtering options that allow
+										users to tailor the presentation of the data according to their specific needs
+										or interests. Whether looking for results from a particular election year, by
+										region, or by candidate, the application enables detailed and customizable
+										views, enhancing user interaction and accessibility. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section3 p-30" id="Portfolio">
+						<div class="sec-title">
+							<div class="pg-sub-title">Portfolio</div>
+							<div class="pg-title">My Portfolio</div>
+						</div>
+						<div class="portfolio-list">
+							<div class="portfolio-item">
+								<div class="portfolio-img"><img src="./images/Llama-2-blog-image-1.png"></div>
+								<div class="portfolio-details">
+									<div class="portfolio-title">Handi GPT</div>
+									<div class="portfolio-text"> Fune tune the Llama-3 LLM to help the people with
+										disabilities to find information of administrative procedures which they have
+										the right to have and build a accesible chatbot UI.</div>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-img"><img src="./images/ML Football matches predictor.png"></div>
+								<div class="portfolio-details">
+									<div class="portfolio-title">ML Football matches predictor</div>
+									<div class="portfolio-text"> A machine learning model designed to predict the
+										outcomes of football matches. It leverages historical data from 40,000 matches, including
+										several key performance metrics, which are scraped and processed. The model
+										employs a Convolutional Neural Network and has achieved an accuracy rate of 84%.</div>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-img"><img src="./images/viacam_cam2.png"></div>
+								<div class="portfolio-details">
+									<div class="portfolio-title">New EVIACAM</div>
+									<div class="portfolio-text"> rebuilding the software that is used by people with
+										disabilities to control the mouvement of the mouse using head mouvement.
+										incorporating cutting-edge technologies and algorithms for improved facial and
+										iris recognition. </div>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-img"><img src="./images/ML_sea_classifier.png"></div>
+								<div class="portfolio-details">
+									<div class="portfolio-title">ML Sea classifier</div>
+									<div class="portfolio-text"> A academic project that classifies the sea images into
+										2 classes: sea and not sea using a CNN model with an accuracy of 98%.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section4 p-30" id="Education">
+						<div class="sec-title">
+							<div class="pg-sub-title">Education</div>
+							<div class="pg-title">My Education</div>
+						</div>
+						<div class="education-list">
+							<div class="education-item">
+								<div class="education-year">2022 - 2024</div>
+								<div class="education-details">
+									<div class="education-title">Master's Degree in Data Science</div>
+									<div class="education-text">Université Paris 8</div>
+								</div>
+							</div>
+							<div class="education-item">
+								<div class="education-year">2019 - 2022</div>
+								<div class="education-details">
+									<div class="education-title">Bachelor's Degree in Computer Science</div>
+									<div class="education-text">Université Aix Marseille </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section5 p-30" id="Contact">
+						<div class="sec-title">
+							<div class="pg-sub-title">Contact</div>
+							<div class="pg-title">Get in Touch</div>
+						</div>
+						<div class="notification" id="notification" style="display:none;"></div>
+						<div class="contact-form">
+							<form action="sendmail.php" method="post" id="contactForm">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Your Name" class="form-control">
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Your Email" class="form-control">
+								</div>
+								<div class="form-group">
+									<textarea name="message" placeholder="Your Message" class="form-control"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="submit" value="Send Message" class="btn">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+</body>
+
+</html>
