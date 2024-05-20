@@ -196,7 +196,7 @@ Padding & Margins CSS
 }
 
 .m-5{
-  margin:: 5px;
+  margin: 5px;
 }
 .m-10{
   margin: 10px;
@@ -390,20 +390,14 @@ Page Styles
    margin: 5px 0px;
 }
 
-
-
 .social-icons ul li a {
     padding: 5px 8px;
     font-size: 16px;
 }
 
-
 .social-icons ul li a:hover {
   color: #000;
   transform: scale(1.2) translateY(-5px);
-}
-.user-profile {
-    padding-left: 50px;
 }
 
 .sm-text {
@@ -521,6 +515,83 @@ Page Styles
     text-decoration: underline;
 }
 
+.user-profile {
+  text-align: center; /* This will center the text of all child elements */
+  margin: 0 auto; /* Useful for centering the entire block if it's not full-width */
+  background-color: #fff;
+  padding: 20px;
+  display: flex; /* Using flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Aligns children in the center */
+}
+
+.profile-img {
+  margin-bottom: 20px;
+
+}
+
+.profile-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profile-header h2 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-details {
+  text-align: center; /* Centers the text inside the profile details */
+  width: 100%; /* Ensures the div takes full width if not already set */
+  margin: 0 auto; /* Centers the div horizontally if needed */
+  padding: 20px; /* Adds padding for better spacing */
+}
+
+.profile-details p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* General style for all icons */
+.social-icons a {
+  font-size: 24px; /* Adjust the size of the icons */
+  transition: color 0.3s ease-in-out;
+}
+
+/* LinkedIn Icon Styles */
+.social-icons .linkedin-icon {
+  color: #0e76a8; /* LinkedIn blue */
+}
+
+.social-icons .linkedin-icon:hover {
+  color: #0056b3; /* A darker blue for hover */
+}
+
+/* GitHub Icon Styles */
+.social-icons .github-icon {
+  color: #333; /* GitHub icon usual color */
+}
+
+.social-icons .github-icon:hover {
+  color: #6e5494; /* GitHub's highlight color */
+}
+
 /* Work Experience Section Styles */
 .section2 {
   background: #fff;
@@ -546,31 +617,33 @@ Page Styles
 
 .work-details {
   margin-left: 20px;
+  padding-right: 20px; /* Ajout d'un padding à droite pour plus d'espace */
 }
 
 .work-title {
-  font-size: 20px;
+  font-size: 20px; /* Taille augmentée pour plus de visibilité */
   color: #333;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 .work-contract {
-  font-size: 14px;
+  font-size: 16px; /* Légère augmentation pour plus de lisibilité */
   color: #999;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 .work-company {
-  font-size: 16px;
-  color: #666;
+  font-size: 18px; /* Légère augmentation pour plus de lisibilité */
+  color: #333;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .work-text {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px; /* Augmentation de la taille pour améliorer la lisibilité */
+  line-height: 1.8; /* Augmentation de l'espacement entre les lignes */
   color: #666;
   margin-bottom: 10px;
 }
@@ -579,6 +652,7 @@ Page Styles
 @media (max-width: 768px) {
   .work-details {
       margin-left: 0;
+      padding-right: 0; /* Ajustement du padding en responsive */
   }
 }
 
@@ -594,6 +668,13 @@ Page Styles
   text-align: left;
   font-size: 24px;
   margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
 .category-title {
@@ -604,6 +685,9 @@ Page Styles
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 .skill-item {
@@ -614,6 +698,9 @@ Page Styles
 
 .skill-name {
   font-weight: normal;
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
 }
 
 .skill-level {
@@ -621,16 +708,21 @@ Page Styles
   border-radius: 10px;
   padding: 5px 15px;
   text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 100px;
 }
 
 /* Skill Level Colors */
 .skill-level.Expert {
-  background-color: #FFEB3B; /* Green for expert level */
-  color: black;
+  background-color: #FFD700; /* Gold for expert level */
+  color: white;
 }
 
 .skill-level.Advanced {
-  background-color: black; /* Yellow for advanced level */
+  background-color: black; /* Black for advanced level */
   color: white;
 }
 
@@ -669,6 +761,7 @@ Page Styles
   height: 200px; /* or any other fixed height */
   object-fit: cover; /* This will ensure that the aspect ratio is maintained without stretching the image */
   display: block;
+  transition: transform 0.3s ease-in-out;
 }
 
 .portfolio-details {
@@ -681,12 +774,15 @@ Page Styles
   color: #333;
   font-weight: 600;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .portfolio-text {
   font-size: 14px;
   color: #666;
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 /* Responsive Design for Portfolio Section */
